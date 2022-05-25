@@ -7,6 +7,8 @@
     <title>Wikipedia</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" href="./imgs/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/minitablet.css" media="(min-width: 481px)">
+    <link rel="stylesheet" href="css/laptop.css" media="(min-width: 769px)">
 </head>
 <body>
     <header class="header">
@@ -24,7 +26,7 @@
             <section class="main__search">
                 <div class="search-form">
                     <form action="" class="">
-                        <input type="text" name="query" id="query" class="input-query">
+                        <input type="text" name="query" id="query" class="input-query" autofocus>
     
                         <select name="language-option" id="language-option" class="select-language">
                             <option value="EN" selected>EN</option> 
@@ -41,12 +43,12 @@
             </section>
 
             <section class="main__languages">
-                <a href="#" class="lang-feature">
+                <a href="#" class="lang-feature self-end">
                     <h3>English</h3>
                     <span class="num-articles">6 458 000+</span>
                     <span class="lang-articles">articles</span>
                 </a>
-                <a href="#" class="lang-feature">
+                <a href="#" class="lang-feature self-start">
                     <h3>日本語</h3>
                     <span class="num-articles">1 314 000+</span>
                     <span class="lang-articles">記事</span>
@@ -56,17 +58,17 @@
                     <span class="num-articles">1 798 000+</span>
                     <span class="lang-articles">статей</span>
                 </a>
-                <a href="#" class="lang-feature">
+                <a href="#" class="lang-feature self-center min-content-155">
                     <h3>Español</h3>
                     <span class="num-articles">1 755 000+</span>
                     <span class="lang-articles">artículos</span>
                 </a>
-                <a href="#" class="lang-feature">
+                <a href="#" class="lang-feature self-start">
                     <h3>Deutsch</h3>
                     <span class="num-articles">2 667 000+</span>
                     <span class="lang-articles">Artikle</span>
                 </a>
-                <a href="#" class="lang-feature">
+                <a href="#" class="lang-feature self-end">
                     <h3>Français</h3>
                     <span class="num-articles">2 400 000+</span>
                     <span class="lang-articles">articles</span>
@@ -76,17 +78,17 @@
                     <span class="num-articles">1 742 000+</span>
                     <span class="lang-articles">voci</span>
                 </a>
-                <a href="#" class="lang-feature">
+                <a href="#" class="lang-feature min-content-155">
                     <h3>中文</h3>
                     <span class="num-articles">1 256 000+</span>
                     <span class="lang-articles">条目 / 條目</span>
                 </a>
-                <a href="#" class="lang-feature">
+                <a href="#" class="lang-feature self-end">
                     <h3>Português</h3>
                     <span class="num-articles">1 085 000+</span>
                     <span class="lang-articles">artigos</span>
                 </a>
-                <a href="#" class="lang-feature">
+                <a href="#" class="lang-feature self-start">
                     <h3>العربية</h3>
                     <span class="num-articles">1 159 000+</span>
                     <span class="lang-articles">مقالة</span>
@@ -106,164 +108,169 @@
     </main>
 
     <footer>
-        <section class="footer__sidebar">
-            <img src="./imgs/wiki-black.svg" alt="Wikimedia Fundation logo">
-            <p class="sidebar__wikimedia">
-                Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects.
-            </p>
-            <a href="#" class="sidebar__donation">
-                You can support our work with a donation.
-            </a>
-        </section>
-        <section class="footer__sidebar-apps">
-            <div class="sidebar-apps__header">
-                <img src="./imgs/wiki-min-logo.svg" alt="Wikipedia small logo">
-                <a href="#" class="sidebar-apps__link-download">
-                    Download Wikipedia for Android or iOS
+        <div class="footer-container">
+            <section class="footer__sidebar">
+                <img src="./imgs/wiki-black.svg" alt="Wikimedia Fundation logo">
+                <p class="sidebar__wikimedia">
+                    Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects.
+                </p>
+                <a href="#" class="sidebar__donation">
+                    You can support our work with a donation.
                 </a>
-            </div>
-            <p class="sidebar-apps__text">
-                Save your favorite articles to read offline, sync your reading lists across devices and customize your reading experience with the official Wikipedia app.
-            </p>
-            <div class="sidebar-apps__mobile-apps">
-                <img src="./imgs/google-play.svg" alt="Wikipedia on Google Play">
-                <img src="./imgs/app-store.svg" alt="Wikipedia on the AppStore">
-            </div>
-        </section>
-        <section class="footer__other-projects">
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon">
-                        <img src="./imgs/commons.svg" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>Commons</h3>
-                        <p>Freely usable photos & more</p>
-                    </div>
-                </a>
-            </div>
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon">
-                        <img src="./imgs/wiki-voyage.svg" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>Wikivoyage</h3>
-                        <p>Free travel guide</p>
-                    </div>
-                </a>
-            </div>
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon">
-                        <img src="./imgs/wiki-tionary.svg" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>Wiktionary</h3>
-                        <p>Free dictionary</p>
-                    </div>
-                </a>
-            </div>
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon">
-                        <img src="./imgs/wiki-books.svg" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>Wikibooks</h3>
-                        <p>Free textbooks</p>
-                    </div>
-                </a>
-            </div>
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon project__icon-news">
-                        <img src="./imgs/wiki-news.png" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>Wikinews</h3>
-                        <p>Free news source</p>
-                    </div>
-                </a>
-            </div>
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon">
-                        <img src="./imgs/wiki-data.svg" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>Wikidata</h3>
-                        <p>Free knowledge base</p>
-                    </div>
-                </a>
-            </div>
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon">
-                        <img src="./imgs/wiki-versity.svg" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>Wikiversity</h3>
-                        <p>Free course materials</p>
-                    </div>
-                </a>
-            </div>
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon">
-                        <img src="./imgs/wiki-quote.svg" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>Wikiquote</h3>
-                        <p>Free quote compendium</p>
-                    </div>
-                </a>
-            </div>
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon">
-                        <img src="./imgs/media-wiki.svg" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>MediaWiki</h3>
-                        <p>Free & open wiki application</p>
-                    </div>
-                </a>
-            </div>
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon">
-                        <img src="./imgs/wiki-source.svg" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>Wikisource</h3>
-                        <p>Free library</p>
-                    </div>
-                </a>
-            </div>
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon">
-                        <img src="./imgs/wiki-species.svg" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>Wikispecies</h3>
-                        <p>Free species directory</p>
-                    </div>
-                </a>
-            </div>
-            <div class="other-projects__project">
-                <a href="#">
-                    <div class="project__icon">
-                        <img src="./imgs/meta-wiki.svg" alt="">
-                    </div>
-                    <div class="project__text">
-                        <h3>Meta-Wiki</h3>
-                        <p>Community coordination & documentation</p>
-                    </div>
-                </a>
-            </div>
-        </section>
+            </section>
+    
+            <section class="footer__sidebar-apps">
+                <div class="sidebar-apps__header">
+                    <img src="./imgs/wiki-min-logo.svg" alt="Wikipedia small logo">
+                    <a href="#" class="sidebar-apps__link-download">
+                        Download Wikipedia for Android or iOS
+                    </a>
+                </div>
+                <p class="sidebar-apps__text">
+                    Save your favorite articles to read offline, sync your reading lists across devices and customize your reading experience with the official Wikipedia app.
+                </p>
+                <div class="sidebar-apps__mobile-apps">
+                    <img src="./imgs/google-play.svg" alt="Wikipedia on Google Play">
+                    <img src="./imgs/app-store.svg" alt="Wikipedia on the AppStore">
+                </div>
+            </section>
+    
+            <section class="footer__other-projects">
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon">
+                            <img src="./imgs/commons.svg" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>Commons</h3>
+                            <p>Freely usable photos & more</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon">
+                            <img src="./imgs/wiki-voyage.svg" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>Wikivoyage</h3>
+                            <p>Free travel guide</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon">
+                            <img src="./imgs/wiki-tionary.svg" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>Wiktionary</h3>
+                            <p>Free dictionary</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon">
+                            <img src="./imgs/wiki-books.svg" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>Wikibooks</h3>
+                            <p>Free textbooks</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon project__icon-news">
+                            <img src="./imgs/wiki-news.png" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>Wikinews</h3>
+                            <p>Free news source</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon">
+                            <img src="./imgs/wiki-data.svg" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>Wikidata</h3>
+                            <p>Free knowledge base</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon">
+                            <img src="./imgs/wiki-versity.svg" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>Wikiversity</h3>
+                            <p>Free course materials</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon">
+                            <img src="./imgs/wiki-quote.svg" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>Wikiquote</h3>
+                            <p>Free quote compendium</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon">
+                            <img src="./imgs/media-wiki.svg" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>MediaWiki</h3>
+                            <p>Free & open wiki application</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon">
+                            <img src="./imgs/wiki-source.svg" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>Wikisource</h3>
+                            <p>Free library</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon">
+                            <img src="./imgs/wiki-species.svg" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>Wikispecies</h3>
+                            <p>Free species directory</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-projects__project">
+                    <a href="#">
+                        <div class="project__icon">
+                            <img src="./imgs/meta-wiki.svg" alt="">
+                        </div>
+                        <div class="project__text">
+                            <h3>Meta-Wiki</h3>
+                            <p>Community coordination & documentation</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        
         <div class="footer__line"></div>
         <section class="footer__license">
             <p class="footer__license__text">

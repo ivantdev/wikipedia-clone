@@ -1,0 +1,51 @@
+footer .footer-container{
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    grid-template-columns: 35% 65%;
+}
+
+.footer__other-projects {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+footer .footer__sidebar {
+    text-align: left;
+}
+
+
+.footer__sidebar img {
+    display: inline-block;
+    margin-top: 15px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.footer__sidebar .sidebar__wikimedia {
+    display: inline-block;
+    width: 70%;
+    margin-left: 10px;
+}
+
+.footer__sidebar .sidebar__donation {
+    display: inline-block;
+    width: 70%;
+    margin-left: 60px;
+}
+
+.footer__sidebar-apps .sidebar-apps__header {
+    justify-content: flex-start;
+}
+
+.footer__sidebar-apps .sidebar-apps__text {
+    text-align: left;
+    margin-left: 60px;
+    max-width: 70%;
+}
+
+.sidebar-apps__header img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}

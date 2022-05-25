@@ -67,6 +67,10 @@ a {
     margin: 10px auto;
 }
 
+.main__search {
+    width: 100%;
+}
+
 .main__search .search-form {
     position: relative;
     width: 94%;
@@ -155,6 +159,7 @@ a {
 }
 
 .lang-feature {
+    width: auto;
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
@@ -398,6 +403,7 @@ footer .footer__sidebar {
 }
 
 .footer__license {
+    width: 100%;
     order: 5;
 }
 

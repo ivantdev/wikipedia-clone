@@ -1,0 +1,83 @@
+.header {
+    grid-template-columns: 1fr;
+}
+
+.header__logo {
+    display: none;
+}
+
+.header .header__logo-text {
+    width: 176px;
+}
+
+.header__logo-text img {
+    width: 176px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__search {
+    order: 2;
+    margin-top: 20px;
+}
+
+.main__languages {
+    order: 1;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    background-image: url("/imgs/logo-min.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+}
+
+.main__list-languages {
+    order: 3;
+    margin: 20px auto;
+}
+
+.lang-feature {
+    width: min-content;
+    min-width: 130px;
+    max-width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lang-feature.min-content-155 {
+    min-width: 155px;
+}
+
+.lang-feature h3 {
+    width: 100%;
+    max-width: 130px;
+    font-size: 1.6rem;
+}
+
+.self-end {
+    justify-self: end;
+    padding: 10px 0;
+}
+
+.self-start {
+    justify-self: start;
+    padding: 10px 0;
+}
+
+.self-center {
+    margin-left: 20px;
+}
+
+.main__search .search-form {
+    max-width: 355px;
+}
+
+.footer__other-projects {
+    grid-template-columns: repeat(3, 1fr);
+}
