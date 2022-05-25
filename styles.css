@@ -140,13 +140,15 @@ a {
     height: 42px;
     background-image: url("./imgs/search-icon.svg");
     background-position: center;
-    background-size: 30px;
+    background-size: 24px;
     background-repeat: no-repeat;
 }
 
 .main__languages {
     width: 100%;
+    max-width: 546px;
     height: auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -217,7 +219,7 @@ a {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("./imgs/language-icon.png");
+    background-image: url("./imgs/language-icon.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -233,17 +235,190 @@ a {
 .list-languages__container .list-languages__icon-arrow {
     display: inline-block;
     width: 12px;
-    height: 12px;
-    background-image: url("./imgs/arrow-down.png");
+    height: 8px;
+    background-image: url("./imgs/arrow-down.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
-.main__line-bottom {
+.main__line-bottom, .footer__line {
     display: block;
     width: 92%;
     height: 1px;
     margin: 0 auto;
     background-color: var(--soft-gray)
+}
+
+footer {
+    width: 100%;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .footer__sidebar {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    order: 1;
+}
+
+.footer__sidebar img {
+    width: 38px;
+    height: 39px;
+    object-fit: cover;
+}
+
+.footer__sidebar .sidebar__wikimedia {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    line-height: 1.95rem;
+    color: var(--gray-text);
+}
+
+.footer__sidebar .sidebar__donation {
+    font-size: 1.3rem;
+    color: var(--blue-primary);
+}
+
+.footer__sidebar-apps {
+    width: 100t;
+    height: auto;
+    margin-top: 10px;
+    padding: 8px 0;
+    margin-bottom: 60px;
+    background-color: var(--soft-white);
+    order: 3;
+}
+
+.footer__sidebar-apps .sidebar-apps__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.sidebar-apps__header img {
+    width: 28px;
+    height: 28.1px;
+    object-fit: cover;
+}
+
+.sidebar-apps__header a {
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--blue-primary);
+}
+
+.footer__sidebar-apps .sidebar-apps__text {
+    width: 95%;
+    height: auto;
+    margin: 13px auto;
+    margin-top: 26px;
+    font-size: 1.3rem;
+    line-height: 1.95rem;
+    color: var(--gray-text);
+    text-align: center;
+}
+
+.sidebar-apps__mobile-apps {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.sidebar-apps__mobile-apps img {
+    width: 120px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.footer__other-projects {
+    width: 100%;
+    height: auto;
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    order: 2;
+}
+
+.other-projects__project {
+    padding: 10px 5px;
+    min-height: 50px;
+}
+
+.other-projects__project:nth-child(2n) {
+    padding-left: 0;
+}
+
+.other-projects__project a {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+    align-items: center;
+}
+
+.project__icon img {
+    width: 50px;
+    height: 37px;
+}
+
+.project__icon-news img {
+    width: 50px;
+    height: 27px;
+}
+
+.project__text h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.9rem;
+    color: var(--blue-primary);
+}
+
+.project__text p {
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    color: var(--gray-text);
+    hyphens: auto;
+}
+
+.footer__line {
+    order: 4;
+}
+
+.footer__license {
+    order: 5;
+}
+
+.footer__license .footer__license__text {
+    width: 95%;
+    height: auto;
+    margin: 14px auto;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.95rem;
+    color: var(--gray-text);
+}
+
+.footer__license__text a {
+    color: var(--blue-primary);
+}
+
+.footer__license__text .license-link::after, .footer__license__text .terms-link::after {
+    content: "\2022";
+    font-size: 1.3rem;
+    line-height: inherit;
+    margin-left: .8rem;
+    margin-right: .5rem;
 }
