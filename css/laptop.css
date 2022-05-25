@@ -1,6 +1,7 @@
 footer .footer-container{
     display: grid;
     width: 95%;
+    max-width: 1300px;
     margin: 0 auto;
     grid-template-columns: 35% 65%;
 }
