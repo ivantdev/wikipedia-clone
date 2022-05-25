@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wikipedia</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./imgs/icon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
@@ -16,7 +17,92 @@
             <img src="./imgs/wiki-text.png" alt="">
                 <span class="header__slogan">The Free Encyclopedia</span>
         </div>
-        
     </header>
+
+    <main>
+        <div class="main-container">
+            <section class="main__search">
+                <div class="search-form">
+                    <form action="" class="">
+                        <input type="text" name="query" id="query" class="input-query">
+    
+                        <select name="language-option" id="language-option" class="select-language">
+                            <option value="EN" selected>EN</option> 
+                            <option value="ES">ES</option>
+                            <option value="DE">DE</option>
+                            <option value="CA">CA</option>
+                            <option value="PT">PT</option>
+                            <option value="FR">FR</option>
+                        </select>
+    
+                        <button type="submit"><span class="icon"></span></button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="main__languages">
+                <a href="#" class="lang-feature">
+                    <h3>English</h3>
+                    <span class="num-articles">6 458 000+</span>
+                    <span class="lang-articles">articles</span>
+                </a>
+                <a href="#" class="lang-feature">
+                    <h3>日本語</h3>
+                    <span class="num-articles">1 314 000+</span>
+                    <span class="lang-articles">記事</span>
+                </a>
+                <a href="#" class="lang-feature">
+                    <h3>Русский</h3>
+                    <span class="num-articles">1 798 000+</span>
+                    <span class="lang-articles">статей</span>
+                </a>
+                <a href="#" class="lang-feature">
+                    <h3>Español</h3>
+                    <span class="num-articles">1 755 000+</span>
+                    <span class="lang-articles">artículos</span>
+                </a>
+                <a href="#" class="lang-feature">
+                    <h3>Deutsch</h3>
+                    <span class="num-articles">2 667 000+</span>
+                    <span class="lang-articles">artikle</span>
+                </a>
+                <a href="#" class="lang-feature">
+                    <h3>Fraçais</h3>
+                    <span class="num-articles">2 400 000+</span>
+                    <span class="lang-articles">articles</span>
+                </a>
+                <a href="#" class="lang-feature">
+                    <h3>Italiano</h3>
+                    <span class="num-articles">1 742 000+</span>
+                    <span class="lang-articles">voci</span>
+                </a>
+                <a href="#" class="lang-feature">
+                    <h3>中文</h3>
+                    <span class="num-articles">1 256 000+</span>
+                    <span class="lang-articles">条目 / 條目</span>
+                </a>
+                <a href="#" class="lang-feature">
+                    <h3>Português</h3>
+                    <span class="num-articles">1 085 000+</span>
+                    <span class="lang-articles">artigos</span>
+                </a>
+                <a href="#" class="lang-feature">
+                    <h3>العربية</h3>
+                    <span class="num-articles">1 159 000+</span>
+                    <span class="lang-articles">مقالة</span>
+                </a>
+            </section>
+
+            <section class="main__list-languages">
+                <div class="list-languages__line"></div>
+                <a href="#" class="list-languages__container">
+                    <span class="list-languages__icon-lang"></span>
+                    <span class="list-languages__text">Read Wikipedia in your language</span>
+                    <span class="list-languages__icon-arrow"></span>
+                </a>
+            </section>
+        </div>
+        <div class="main__line-bottom"></div>
+    </main>
 </body>
 </html>

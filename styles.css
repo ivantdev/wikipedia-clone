@@ -1,3 +1,12 @@
+:root {
+    --gray: #a2a9b1;
+    --soft-gray: #c8ccd1;
+    --wram-gray: #72777d;
+    --blue-primary: #36c;
+    --gray-text: #54595d;
+    --soft-white: #f8f9fa;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,13 +18,20 @@ html {
     font-size: 62.5%;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
 .header {
     display: grid;
     grid-template-columns: 57px 152px;
     justify-content: center;
-    margin-top: 50px;
+    gap: 2px;
+    margin-top: 48px;
     width: 100%;
-    height: 80px;
+    height: 50px;
 }
 
 .header__logo img {
@@ -42,4 +58,192 @@ html {
     font-size: 1.4rem;
     text-align: center;
     font-family: Linux Libertine,Georgia,Times,serif;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.main__search .search-form {
+    position: relative;
+    width: 94%;
+    height: 44px;
+    min-width: 300px;
+    max-width: 450px;
+    margin: 0 auto;
+    border: 1px solid var(--gray);
+    border-radius: 2px;
+}
+
+.search-form:hover {
+    border-color: var(--wram-gray);
+}
+
+.search-form form {
+    display: flex;
+    justify-content: flex-start;
+    width: calc(100% - 6px);
+    height: 42px;
+    margin: 0 auto;
+}
+
+.search-form form:focus-within {
+    width: calc(100% - 4px);
+    height: 40px;
+}
+
+.search-form .input-query {
+    width: calc(100% - 118px);
+    height: calc(100% - 1px);
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+
+.input-query:focus {
+    padding: 9px;
+    padding-right: 10px;
+}
+
+.search-form:focus-within {
+    border: 2px solid var(--blue-primary);
+}
+
+.search-form .select-language {
+    width: 40px;
+    height: calc(100% - 3px);
+    margin-left: 20px;
+    border: none;
+    color: var(--wram-gray);
+    outline: none;
+}
+
+.search-form button {
+    position: absolute;
+    top: 1;
+    right: 0;
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    border: none;
+    background-color: var(--blue-primary);
+}
+
+.search-form span.icon {
+    display: block;
+    width: 50px;
+    height: 42px;
+    background-image: url("./imgs/search-icon.svg");
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+
+.main__languages {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.lang-feature {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    text-align: center;
+    color: var(--gray-text);
+    line-height: 1.8rem;
+}
+
+.lang-feature h3 {
+    font-size: 1.4rem;
+    color: var(--blue-primary);
+    margin-bottom: 5px;
+}
+
+.lang-feature span {
+    font-size: 1.3rem;
+}
+
+.main__list-languages {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.main__list-languages .container-button {
+    width: 100%;
+    max-width: 4;
+}
+
+.list-languages__line {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    width: 80%;
+    max-width: 450px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: var(--gray);
+}
+
+.list-languages__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    max-width: 300px;
+    height: 36px;
+    margin: 0 auto;
+    padding: 6px 12px;
+    background-color: var(--soft-white);
+    border: 1px solid var(--gray);
+    border-radius: 2px;
+    text-align: center;
+    outline: 1.6rem solid white;
+}
+
+.list-languages__container .list-languages__icon-lang {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("./imgs/language-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list-languages__container .list-languages__text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--blue-primary);
+    line-height: 1.6rem;
+}
+
+.list-languages__container .list-languages__icon-arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("./imgs/arrow-down.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main__line-bottom {
+    display: block;
+    width: 92%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: var(--soft-gray)
 }
